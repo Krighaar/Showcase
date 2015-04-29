@@ -1,0 +1,58 @@
+<h1>Ryder Cup</h1>
+<div class="container">
+    <div class="row">
+
+         <div class="col-md-8">
+             <img class="img-rounded" style="position: absolute" src="images/Broadway-Grass.jpg" width="100%" height="100%"/>
+            <p style="position: inherit">Ryder cup er en Turnering der har blevet spillet de seneste 3 år. De første gange blev der spillet fredag-søndag.
+            Formatet var foursome fredag, greensome og fourball lørdag og så singler søndag.</p>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <table class="table table-striped jylland">
+                <thead>
+                <th colspan="4" style="text-align: center">Sjælland</th>
+                <tr></tr>
+                <th>Navn</th>
+                <th>Antal</th>
+                <th>Bemærkning</th>
+                <th></td>
+                <tr></tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="player in players">
+                    <td>{{player.name}}</td>
+                    <td>{{player.antalRC}}</td>
+                    <td>{{player.remarks}}</td>
+                    <td><small><span class="{{player.remarks | remark}}"></span></small></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped">
+                <thead>
+                <th colspan="4" style="text-align: center">Jylland</th>
+                <tr></tr>
+                <th>Navn</th>
+                <th>Antal</th>
+                <th>Bemærkning</th>
+                <th></td>
+                <tr></tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="player in players">
+                    <td>{{player.name}}</td>
+                    <td>{{player.antalRC}}</td>
+                    <td>{{player.remarks}}</td>
+                    <td><small><span class="{{player.remarks | remark}}"></span></small></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
